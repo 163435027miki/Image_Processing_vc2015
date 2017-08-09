@@ -6,7 +6,6 @@
 #include <string>
 #include <tuple>
 
-
 #include <opencv2/opencv.hpp>
 
 
@@ -109,6 +108,7 @@ void readCSVData(
   str = readTextFile(filename);
 
   /* 要素数, 行数, 列数の取得 */
+  printf("画像サイズを取得しています\n");
   for (i = 0; i < strlen(str); i++) {
     switch (str[i]) {
       case ',': countSep++; cols++; break;
@@ -119,6 +119,7 @@ void readCSVData(
         break;
     }
   }
+ 
   *pRows = countNL;
   *pElems = countSep + countNL; 
 
@@ -134,6 +135,9 @@ void readCSVData(
   /* CSVデータを格納用配列へコピー */
   i = j = 0; 
   k = 0; elem[0] = '0'; elem[1] = '\0';
+
+  printf("データをメモリに格納します\n");
+
   while(j < (*pRows) * (*pCols)) {
     if (i < strlen(str)) {
       switch (str[i]) {
@@ -208,6 +212,7 @@ char* readTextFile(const char* filename)
 
   /* テキストデータの読み込み */
   str[0] = '\0';
+  printf("csvを読み込んでいます\n");
   while (fgets(buf, sizeof(buf), fp) != NULL) {
     strncat(str, buf, strlen(buf) + 1);
   }

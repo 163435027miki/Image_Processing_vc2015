@@ -151,6 +151,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bmp_noise.cpp" />
+    <ClCompile Include="circle_cut.cpp" />
     <ClCompile Include="gaso.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_csv_image.cpp" />

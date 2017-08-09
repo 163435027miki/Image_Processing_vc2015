@@ -3,8 +3,10 @@ d:\opencv-3.1.0\build\install\include\opencv2\core\mat.hpp(1965): warning C4819:
 d:\opencv-3.1.0\build\install\include\opencv2\core\persistence.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 d:\opencv-3.1.0\build\install\include\opencv2\core\utility.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 d:\opencv-3.1.0\build\install\include\opencv2\core\utility.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-d:\visual studio 2015\projects\image_processing_vc2015\image_processing_vc2015\read_csv.cpp(77): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
-d:\visual studio 2015\projects\image_processing_vc2015\image_processing_vc2015\read_csv.cpp(212): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\visual studio 2015\projects\image_processing_vc2015\image_processing_vc2015\read_csv.cpp(76): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+d:\visual studio 2015\projects\image_processing_vc2015\image_processing_vc2015\read_csv.cpp(192): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' の宣言を確認してください
+d:\visual studio 2015\projects\image_processing_vc2015\image_processing_vc2015\read_csv.cpp(217): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(255): note: 'strncat' の宣言を確認してください
   Image_Processing_vc2015.vcxproj -> D:\Visual Studio 2015\Projects\Image_Processing_vc2015\x64\Debug\Image_Processing_vc2015.exe
   Image_Processing_vc2015.vcxproj -> D:\Visual Studio 2015\Projects\Image_Processing_vc2015\x64\Debug\Image_Processing_vc2015.pdb (Full PDB)

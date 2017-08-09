@@ -114,37 +114,22 @@ int make_csv_image(char read_csv_directory[],char date[]){
 		}				
    
    */
+	
 	for (int j = 0; j < rows; ++j) {
 		for (int i = 0; i < cols; ++i) {
 			make_image.at<uchar>(j, i) = OutputRGB[i][j];
 		}
 	}
-		FILE *fp_Output_image;
-
+		
+		
 		//outputを保存するディレクトリの作成
 		if (_mkdir(make_output_f) == 0) {
 			printf("フォルダ %s を作成しました\n", make_output_f);
 		}
 		else { printf("フォルダ作成に失敗しました。もしくは作成済みです\n"); }
 
-
-		fp_Output_image = fopen( make_output, "w" );
-	if( fp_Output_image == NULL ){
-		printf( "%sファイルが開けません\n", make_output );
-		return -1;
-	}
-	for(int y=0;y<rows;y++){
-		for(int x=0;x<cols;x++){
-
-			fprintf( fp_Output_image, "%d,",OutputRGB[x][y]);
-		}
-			fprintf( fp_Output_image, "\n");
-	}
-
-	fclose( fp_Output_image );
-
-	printf( "%sファイル書き込みが終わりました\n", make_output );
-
+		
+	
 	imwrite(make_output,make_image); 
 
 	 //名前をつける
@@ -158,7 +143,7 @@ int make_csv_image(char read_csv_directory[],char date[]){
 	
 		cv::waitKey(0);
 
-	
+		return 0;
    
 	
 }
