@@ -11,6 +11,7 @@ int gaso(char input_deta[],char date[]);
 int bmp_noise(char input_deta[],char date[]);
 int make_csv_image(char input_deta[],char date[]);
 int circle_cut(char input_deta[], char date[]);
+int Downsampling(char input_deta[], char date[]);
 
 int main(){
 	int selcect_processing;
@@ -26,6 +27,7 @@ int main(){
 	printf("ノイズ付加 : 2\n");
 	printf("csvファイルからの画像作成 : 3\n");
 	printf("画像を円形に切り抜く : 4\n");
+	printf("ダウンサンプリング : 5\n");
 	printf("処理方法 : ");
 
 	scanf("%d",&selcect_processing);
@@ -39,4 +41,7 @@ int main(){
 	if(selcect_processing==2)bmp_noise(input_deta,deta);
 	if(selcect_processing==3)make_csv_image(input_deta,deta);
 	if(selcect_processing==4)circle_cut(input_deta, deta);
+	if(selcect_processing==5)Downsampling(input_deta, deta);
+
+	
 }

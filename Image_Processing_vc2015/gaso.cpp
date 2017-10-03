@@ -60,8 +60,9 @@ int gaso(char gaso_filename[],char date[])
 	}
 	else {
 		printf("フォルダ作成に失敗しました。もしくは作成済みです\n");
+		//waitKey(0);
 	}
-
+	
 	//csvファイルの書き込み
 	fp = fopen( gaso_output, "w" );
 	if( fp == NULL ){
