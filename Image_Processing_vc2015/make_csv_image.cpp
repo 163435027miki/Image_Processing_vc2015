@@ -39,6 +39,7 @@ int make_csv_image(char read_csv_directory[],char date[]){
 
 	//入出力ファイルの指定
 	sprintf(input_csv_directory,"%s%s.csv",inputcsv_directory,read_csv_directory);
+	//sprintf(input_csv_directory, "%s%s.txt", inputcsv_directory, read_csv_directory);
 	sprintf(make_output_f,"%s%s", outputbmp_directory,date);
 	sprintf(make_output,"%s\\%s.bmp",make_output_f,read_csv_directory);
 

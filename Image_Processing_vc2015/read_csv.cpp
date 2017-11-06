@@ -62,14 +62,16 @@ std::tuple<int, int, std::vector<std::vector<int>>> read_csv(const char *filenam
   }
   printf("\n");
   */
-  cols = cols - 1;
- 
-  
+
   std::vector<std::vector<int>>Output;
   Output.resize(rows);
   for (int i = 0; i<rows; ++i) {
 	  Output[i].resize(cols);
   }
+  cols = cols - 1;
+ 
+  
+  
 
   for (i = 0; i < rows; i++) {
 	  for (j = 0; j < cols ; j++) {
@@ -112,6 +114,7 @@ void readCSVData(
   for (i = 0; i < strlen(str); i++) {
     switch (str[i]) {
       case ',': countSep++; cols++; break;
+	  //case '\t': countSep++; cols++; break;
       case '\n': 
         countNL++; cols++;
         *pCols = (*pCols > cols) ? *pCols : cols;
@@ -141,6 +144,7 @@ void readCSVData(
   while(j < (*pRows) * (*pCols)) {
     if (i < strlen(str)) {
       switch (str[i]) {
+		 //case '\t': case '\n':
         case ',': case '\n':
           val = strtod(elem, &ep);
           if(*ep != '\0') {

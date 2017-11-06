@@ -156,6 +156,7 @@
     <ClCompile Include="gaso.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_csv_image.cpp" />
+    <ClCompile Include="Posterization.cpp" />
     <ClCompile Include="read_csv.cpp" />
     <ClCompile Include="time.cpp" />
   </ItemGroup>
