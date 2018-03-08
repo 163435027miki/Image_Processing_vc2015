@@ -13,6 +13,8 @@ int make_csv_image(char input_deta[],char date[]);
 int circle_cut(char input_deta[], char date[]);
 int Downsampling(char input_deta[], char date[]);
 int posterization(char noise_filename[], char date[]);
+int gray_scale(char noise_filename[], char date[]);
+
 
 int main(){
 	
@@ -33,6 +35,7 @@ int main(){
 		printf("画像を円形に切り抜く : 4\n");
 		printf("ダウンサンプリング : 5\n");
 		printf("ポスタリゼーション : 6\n");
+		printf("グレースケール : 7\n");
 		printf("処理方法 : ");
 
 		scanf("%d", &selcect_processing);
@@ -48,6 +51,7 @@ int main(){
 		if (selcect_processing == 4)circle_cut(input_deta, deta);
 		if (selcect_processing == 5)Downsampling(input_deta, deta);
 		if (selcect_processing == 6)posterization(input_deta, deta);
+		if (selcect_processing == 7)gray_scale(input_deta, deta);
 	}
 	
 }

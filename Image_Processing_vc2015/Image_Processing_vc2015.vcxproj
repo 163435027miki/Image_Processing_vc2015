@@ -154,6 +154,7 @@
     <ClCompile Include="circle_cut.cpp" />
     <ClCompile Include="downsampling.cpp" />
     <ClCompile Include="gaso.cpp" />
+    <ClCompile Include="gray.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_csv_image.cpp" />
     <ClCompile Include="Posterization.cpp" />
